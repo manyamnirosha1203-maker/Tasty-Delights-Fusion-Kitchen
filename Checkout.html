@@ -1,0 +1,70 @@
+<!-- checkout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout — TasteHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <h1 class="logo">TasteHub</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#menu">Menu</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container checkout">
+    <h3>Checkout</h3>
+
+    <div class="checkout__grid">
+      <section class="card">
+        <h4>Order Summary</h4>
+        <div id="summaryItems" class="summary__items">
+          <!-- Injected by JS -->
+        </div>
+        <div class="summary__total">
+          <span>Total:</span>
+          <strong id="summaryTotal">₹0</strong>
+        </div>
+      </section>
+
+      <section class="card">
+        <h4>Your Details</h4>
+        <form id="checkoutForm" class="form">
+          <div class="form__row">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required placeholder="e.g., Priya Sharma" />
+          </div>
+          <div class="form__row">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required placeholder="e.g., 98765 43210" />
+          </div>
+          <div class="form__row">
+            <label for="address">Delivery address</label>
+            <textarea id="address" name="address" rows="3" required placeholder="Street, area, city, pincode"></textarea>
+          </div>
+          <div class="form__row">
+            <label for="notes">Notes (optional)</label>
+            <textarea id="notes" name="notes" rows="2" placeholder="Any special instructions?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Place order</button>
+        </form>
+        <p id="orderStatus" class="status" aria-live="polite"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> TasteHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

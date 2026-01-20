@@ -1,0 +1,200 @@
+/* Logo styling */
+.logo { 
+  display: flex;  
+  align-items: center; 
+  font-size: 1em; 
+  font-weight: bold; 
+  color: white; 
+}
+
+.logo-img { 
+  height: 40px; /* adjust size of logo */
+  margin-right: 10px;
+}
+
+.logo-container { 
+  display: flex; 
+  align-items: center; 
+}
+
+/* Body & layout */
+html, body { 
+  height: 100%; 
+  margin: 0; 
+}
+
+body {
+  display: flex; 
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  color: #333;
+  width: 100%; 
+  min-height: 100%;
+}
+
+/* Header & navigation */
+header {
+  background-color: #d35400;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+nav a {
+  margin: 0 1em;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 7em 1em;
+  background-image: url('hero-food.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100%;
+}
+
+.hero .btn {
+  background-color: #e67e22;
+  color: white;
+  padding: 0.8em 1.5em;
+  margin: 1em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Cuisine cards */
+.cuisines {
+  display: flex;
+  justify-content: space-between; /* spread cards evenly */
+  padding: 2em;
+  flex-wrap: nowrap;              /* keep cards in one line */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.cuisine-card {
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;                        /* equal width for all cards */
+  margin: 0 1em;                  /* spacing between cards */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 100%;
+}
+
+.cuisine-card img {
+  width: 100%;                    /* image fits card width */
+  border-radius: 8px;
+}
+
+.cuisine-card .btn {
+  display: inline-block;
+  margin-top: 1em;
+  background-color: #d35400;
+  color: white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Reservation & contact form cards */
+.reservation {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reservation-card {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px; /* smaller form */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.reservation-card h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.reservation-card label {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.reservation-card input,
+.reservation-card textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+.button-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.btn {
+  background-color: #d35400;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: #b84300;
+}
+
+.btn.big-btn {
+  font-size: 1.1rem;
+  padding: 0.6rem 1.5rem;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.big-btn:hover {
+  background: #005fa3;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1rem;
+  background-color: #d35400;
+  color: white;
+  width: 100%;
+}
